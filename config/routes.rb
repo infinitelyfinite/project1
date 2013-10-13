@@ -1,4 +1,9 @@
 Project1::Application.routes.draw do
+   resources :bookmarks
+  
+  match '/new', to: 'bookmarks#new', via: 'get'
+  match '/index', to: 'bookmarks#index', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
